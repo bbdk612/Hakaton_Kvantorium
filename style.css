@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: Montserrat;
+    box-sizing: border-box;
 }
 
 .top {
@@ -10,14 +11,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+    /* max-height: auto; */
 }
 
-@media screen and (max-width: 1000px) {
-    .top {
-        text-align: center;
-    }
-}
+@media screen and (max-width: 1000px) {}
 
 .container {
     max-width: 1200px;
@@ -69,7 +68,7 @@ body {
 .top__link {
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 25px;
     line-height: 151.2%;
     padding-right: 40px;
     color: #fff;
@@ -79,7 +78,7 @@ body {
     font-family: "Mukta Malar", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 160%;
     /* or 80px */
 
@@ -109,7 +108,7 @@ body {
     flex-wrap: wrap;
     color: #FFFFFF;
     justify-content: start;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     width: 100%;
 }
 
@@ -125,18 +124,33 @@ body {
 .top__grid {
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 1fr 150px;
-    grid-gap: 2em;
+    grid-template-rows: 100px 1fr auto;
+    grid-gap: 3em;
 }
 
 .contact {
     font-style: normal;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 151.2%;
 }
 
 @media screen and (max-width: 1000px) {
+    .top {
+        text-align: center;
+        max-height: 100%;
+        height: auto;
+    }
+
+    .top__contact-with-us {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .top__grid {
+        grid-template-rows: auto 1fr auto;
+    }
+
     .contact {
         font-size: 30px;
         text-align: center;
@@ -144,7 +158,136 @@ body {
     }
 
     .top__arrow {
+        margin-top: 20px;
         display: flex;
         justify-content: center;
     }
+}
+
+
+/* SECTION ABOUT-US */
+
+.about-us {
+    margin-top: -5px;
+    background: linear-gradient(0deg, #835050, #835050), linear-gradient(123.76deg, #8795E0 57.62%, rgba(183, 62, 62, 0.38) 96.55%);
+    background-blend-mode: overlay, normal;
+    min-height: 400px;
+    max-height: 50vh;
+    display: flex;
+    /* text-align: center */
+}
+
+
+.about-us__bg-image {
+    width: auto;
+    max-width: 50%;
+    height: auto;
+}
+
+.about-us__text {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.about-us__text>p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .about-us__bg-image {
+        max-width: 100%;
+        max-height: 100px
+    }
+}
+
+/* .about-us__text>p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 150%;
+} */
+
+/* PRICE LIST */
+
+.price-list {
+    margin: 0px;
+    background: linear-gradient(252.44deg, rgba(165, 67, 67, 0.9) 12.37%, rgba(76, 66, 194, 0.756) 80.01%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.heading {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%;
+}
+
+.price-list__prices {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.price-list__blocks {
+    display: flex;
+}
+
+.price-list__standart {
+    text-align: center;
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    /* min-height: 700px; */
+}
+
+.price-list__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-list__price>span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.price-list__button {
+    color: #000;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-decoration: none;
 }
