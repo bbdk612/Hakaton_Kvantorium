@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Mukta+Malar:wght@600&display=swap');
 
 body {
     margin: 0;
@@ -9,6 +9,7 @@ body {
     background-image: url(img/zikWl-d8pHs\ 1.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -27,7 +28,7 @@ body {
 
 .top__logo {
     height: 90%;
-    margin: 20px;
+    padding: 20px;
 }
 
 .top__nav {
@@ -44,3 +45,22 @@ body {
     color: #fff;
 }
 
+.top__head {
+    font-family: "Mukta Malar", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 160%;
+    /* or 80px */
+
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 9px 3px rgba(0, 0, 0, 0.4);
+    max-width: 860px;
+}
+
+.top__arrow {
+    display: none;
+}
