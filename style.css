@@ -13,9 +13,24 @@ body {
     height: 100vh;
 }
 
+@media screen and (max-width: 1000px) {
+    .top {
+        text-align: center;
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
 }
 
 .top__header {
@@ -24,16 +39,31 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
 }
+
+
 
 .top__logo {
     height: 90%;
     padding: 20px;
 }
 
+
 .top__nav {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .top__nav {
+        display: none;
+    }
+
+    .top__header {
+        padding-top: 10px;
+        justify-content: center;
+    }
 }
 
 .top__link {
@@ -49,7 +79,7 @@ body {
     font-family: "Mukta Malar", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 160%;
     /* or 80px */
 
@@ -61,6 +91,60 @@ body {
     max-width: 860px;
 }
 
+@media screen and (max-width: 1000px) {
+    .top__head {
+        font-size: 30px;
+        max-width: 100%;
+    }
+}
+
 .top__arrow {
     display: none;
+}
+
+
+
+.top__contact-with-us {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    justify-content: start;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.top__work-time {
+    padding-right: 20px;
+}
+
+.top__phone a {
+    color: #fff;
+}
+
+
+.top__grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 150px;
+    grid-gap: 2em;
+}
+
+.contact {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 151.2%;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .top__arrow {
+        display: flex;
+        justify-content: center;
+    }
 }
