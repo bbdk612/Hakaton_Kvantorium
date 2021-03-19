@@ -211,6 +211,15 @@ body {
         width: 100%;
     }
 
+    .about-us__text {
+        padding-right: 0;
+        max-width: 90%
+    }
+
+    .about-us__text>p {
+        font-size: 20;
+    }
+
     .about-us__bg-image {
         max-width: 100%;
         max-height: 100px
