@@ -362,5 +362,8 @@ li {
 
     .price-list__button {
         font-size: 20px;
+        padding: 10px 15px;
+        border: 0px;
+        text-decoration: underline;
     }
 }
