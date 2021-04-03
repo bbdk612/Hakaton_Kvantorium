@@ -7,6 +7,7 @@ body {
 }
 
 .top {
+    background-color: #000;
     background-image: url(img/zikWl-d8pHs\ 1.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -14,10 +15,6 @@ body {
     max-width: 100%;
     height: auto;
     /* max-height: auto; */
-}
-
-@media screen and (max-width: 1000px) {
-    
 }
 
 .container {
@@ -106,7 +103,8 @@ body {
     display: flex;
     width: 100%;
     /* max-width: 90vw; */
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     scrollbar-color: black;
 }
 
@@ -142,7 +140,7 @@ body {
 .top__grid {
     max-height: 130vh;
     display: grid;
-    grid-template-rows: 100px 1fr 1fr auto;
+    grid-template-rows: 100px 1fr 2fr auto;
     grid-gap: 3em;
 }
 
