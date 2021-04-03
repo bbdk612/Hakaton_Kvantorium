@@ -103,8 +103,8 @@ body {
     display: flex;
     width: 100%;
     /* max-width: 90vw; */
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
     scrollbar-color: black;
 }
 
