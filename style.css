@@ -23,6 +23,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    /* height: 100%; */
 
 }
 
@@ -89,9 +90,9 @@ body {
     color: #FFFFFF;
 
     text-shadow: 0px 9px 3px rgba(0, 0, 0, 0.4);
-    max-width: 860px;
+    /* max-width: 860px; */
     margin: 0;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 @media screen and (max-width: 1000px) {
@@ -99,6 +100,19 @@ body {
         font-size: 30px;
         max-width: 100%;
     }
+}
+
+.top__images{
+    display: flex;
+    width: 100%;
+    /* max-width: 90vw; */
+    overflow: auto;
+    scrollbar-color: black;
+}
+
+.top__image {
+    /* max-width: 500px; */
+    padding: 20px;
 }
 
 .top__arrow {
@@ -126,11 +140,22 @@ body {
 
 
 .top__grid {
-    min-height: 100vh;
+    max-height: 130vh;
     display: grid;
-    grid-template-rows: 100px 1fr auto;
+    grid-template-rows: 100px 1fr 1fr auto;
     grid-gap: 3em;
 }
+
+@media (max-width:1000px) {
+    .top__image {
+        max-height: 30vh;
+    }
+    .top__grid {
+        max-height: 100%;
+        min-height: 100vh;
+    }
+}
+
 
 .contact {
     font-style: normal;
@@ -344,11 +369,17 @@ li {
 
 .price-list__button {
     color: #000;
-    font-size: 25px;
+    
     padding: 15px 20px;
     border: 1px solid #000;
     border-radius: 20px;
+    
+}
+
+.price-list__a {
+    color :#000;
     text-decoration: none;
+    font-size: 25px;
 }
 
 @media (max-width: 400px) {
@@ -360,7 +391,7 @@ li {
         line-height: 150%;
     }
 
-    .price-list__button {
+    .price-list__a {
         font-size: 20px;
         padding: 10px 15px;
         border: 0px;
