@@ -317,12 +317,12 @@ body {
     padding-bottom: 25px;
 }
 
-@media (max-width:1000px) {
+/* @media (max-width:1000px) {
     .price-list__prices {
         /* min-width: 100px; */
         /* max-width: 80vw; */
-    }
-}
+    /*}*/
+/*}*/
 
 .upper {
     text-transform: uppercase;
@@ -408,9 +408,9 @@ li {
 }
 
 @media (max-width: 400px) {
-    .price-list__price {
-        /* max-width: 80vw; */
-    }
+    /* .price-list__price {
+        max-width: 80vw;
+    } */
     .price-list__price>span {
         font-size: 25px;
         line-height: 150%;
