@@ -100,17 +100,35 @@ body {
 }
 
 .top__images{
-    display: flex;
-    width: 100%;
-    /* max-width: 90vw; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* width: % */
+    max-width: 90vw;
+    height: auto;
     overflow-y: hidden;
     overflow-x: auto;
-    scrollbar-color: black;
+    /* for FIREFOX */
+    scrollbar-color: rgba(182, 72, 72, 0.5) rgba(76, 76, 175, 0.5);
+    scrollbar-width: thin;
+
+}
+
+/* for CHROMIUM  */
+.top__images::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+    background-color:rgba(76, 76, 175, 0.5);
+}
+
+.top__images::-webkit-scrollbar-track {
+    background-color: rgba(182, 72, 72, 0.5);
 }
 
 .top__image {
-    /* max-width: 500px; */
+    max-width: 500px;
     padding: 20px;
+    /* margin-bottom: 10px; */
+    border-radius: 30px;
 }
 
 .top__arrow {
@@ -196,10 +214,12 @@ body {
 
 .about-us {
     margin-top: -5px;
-    background: linear-gradient(0deg, #835050, #835050), linear-gradient(123.76deg, #8795E0 57.62%, rgba(183, 62, 62, 0.38) 96.55%);
-    background-blend-mode: overlay, normal;
+    background-color: black;
+    color: white;
+    /* background: linear-gradient(0deg, #835050, #835050), linear-gradient(123.76deg, #8795E0 57.62%, rgba(183, 62, 62, 0.38) 96.55%); */
+    /* background-blend-mode: overlay, normal; */
     min-height: 400px;
-    max-height: 50vh;
+    max-height: 100vh;
     display: flex;
     /* text-align: center */
 }
@@ -264,7 +284,9 @@ body {
 
 .price-list {
     margin: 0px;
-    background: linear-gradient(252.44deg, rgba(165, 67, 67, 0.9) 12.37%, rgba(76, 66, 194, 0.756) 80.01%);
+    /* background: linear-gradient(252.44deg, rgba(165, 67, 67, 0.9) 12.37%, rgba(76, 66, 194, 0.756) 80.01%); */
+    background-color: rgb(10, 10, 10);
+    color: #fff;
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -337,6 +359,10 @@ li {
     width: 100%;
     min-width: 400px;
     height: 100%;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 20px;
     /* min-height: 700px; */
 }
 
@@ -366,16 +392,16 @@ li {
 }
 
 .price-list__button {
-    color: #000;
+    color: rgb(255, 255, 255);
     
     padding: 15px 20px;
-    border: 1px solid #000;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     
 }
 
 .price-list__a {
-    color :#000;
+    color :rgb(255, 255, 255);
     text-decoration: none;
     font-size: 25px;
 }
