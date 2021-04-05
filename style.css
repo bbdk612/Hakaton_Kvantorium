@@ -50,6 +50,7 @@ body {
 
 
 .top__nav {
+    
     display: flex;
     justify-content: space-between;
 }
@@ -66,12 +67,22 @@ body {
 }
 
 .top__link {
+    
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 151.2%;
     padding-right: 40px;
     color: #fff;
+}
+
+.top__a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top__a:hover {
+   color: #c94b4b;
 }
 
 .top__head {
@@ -99,7 +110,7 @@ body {
     }
 }
 
-.top__images{
+.top__images {
     display: flex;
     width: 100%;
     /* max-width: 90vw; */
@@ -133,7 +144,12 @@ body {
 }
 
 .top__phone a {
+    text-decoration: none;
     color: #fff;
+}
+
+.top__phone a:hover {
+    color: #c94b4b;
 }
 
 
@@ -148,6 +164,7 @@ body {
     .top__image {
         max-height: 30vh;
     }
+
     .top__grid {
         max-height: 100%;
         min-height: 100vh;
@@ -196,7 +213,7 @@ body {
 
 .about-us {
     margin-top: -5px;
-    background: linear-gradient(0deg, #835050, #835050), linear-gradient(123.76deg, #8795E0 57.62%, rgba(183, 62, 62, 0.38) 96.55%);
+    background: linear-gradient(45deg, #c31432, #240b36);
     background-blend-mode: overlay, normal;
     min-height: 400px;
     max-height: 50vh;
@@ -239,11 +256,13 @@ body {
     }
 
     .about-us__text {
+        font-weight: 900;
         padding-right: 0;
         max-width: 90%
     }
 
     .about-us__text>p {
+        font-weight: 800;
         font-size: 20;
     }
 
@@ -264,7 +283,7 @@ body {
 
 .price-list {
     margin: 0px;
-    background: linear-gradient(252.44deg, rgba(165, 67, 67, 0.9) 12.37%, rgba(76, 66, 194, 0.756) 80.01%);
+    background: linear-gradient(45deg, #c31432, #240b36);
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -367,23 +386,30 @@ li {
 
 .price-list__button {
     color: #000;
-    
+
     padding: 15px 20px;
     border: 1px solid #000;
     border-radius: 20px;
-    
+
+}
+
+.price-list__button:hover {
+    background: linear-gradient(-50deg, #c31432, #240b36);
 }
 
 .price-list__a {
-    color :#000;
+    color: #000;
     text-decoration: none;
     font-size: 25px;
 }
+
+
 
 @media (max-width: 400px) {
     .price-list__price {
         /* max-width: 80vw; */
     }
+
     .price-list__price>span {
         font-size: 25px;
         line-height: 150%;
