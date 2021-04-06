@@ -398,13 +398,45 @@ li {
     padding: 15px 20px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
-    
+
+}
+
+.price-list__button:hover {
+    animation-duration: 1s;
+    animation-name: hoverAnimation;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes hoverAnimation {
+    from {
+        background-color: black;
+        color: white;
+    }
+    to {
+        background-color: white;
+        color: black;
+        /* border: 1px solid black; */
+    }
 }
 
 .price-list__a {
     color :rgb(255, 255, 255);
     text-decoration: none;
     font-size: 25px;
+}
+
+.price-list__a:hover {
+    animation-duration: 1s;
+    animation-name: hoverAnimation;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    /* animation-iteration-count: infinite; */
+    /* border: 0; */
 }
 
 @media (max-width: 400px) {
