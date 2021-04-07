@@ -390,7 +390,7 @@ li {
 
 .price-list__button {
     color: #000;
-
+    
     padding: 15px 20px;
     border: 1px solid #000;
     border-radius: 20px;
@@ -398,7 +398,35 @@ li {
 }
 
 .price-list__button:hover {
-    background: linear-gradient(-50deg, #c31432, #240b36);
+    animation-duration: 1s;
+    animation-name: hoverAnimation;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes hoverAnimation {
+    from {
+        background: linear-gradient(-50deg, #c31432, #240b36);
+        color: black;
+    }
+    to {
+        background: linear-gradient(-50deg, #c31432, #240b36);
+        color: white;
+        /* border: 1px solid black; */
+    }
+}
+
+.price-list__a:hover {
+    animation-duration: 1s;
+    animation-name: hoverAnimation;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    /* animation-iteration-count: infinite; */
+    /* border: 0; */
 }
 
 .price-list__a {
